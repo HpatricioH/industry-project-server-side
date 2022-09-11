@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+
+  <table
+    style="
+      background-color: lightgrey;
+      font-family: 'proxima-nova', sans-serif;
+      height: 100%;
+      width: 100%;
+    "
+  >
+    <section class="purchase-email">
+      <div
+        class="purchase-email__content-wrapper"
+        style="background-color: #ffffff; margin: 48px 48px 56px 48px"
+      >
+        <div
+          class="purchase-emial__heading"
+          style="border-bottom: 1px solid black; text-align: center"
+        >
+          <img
+            src="https://res.cloudinary.com/hopkins87/image/upload/v1662931039/logo_abyybn.png"
+            alt="logo"
+          />
+        </div>
+        <table
+          class="purchase-email__text"
+          style="display: flex; justify-content: flex-start; flex-direction: column; padding: 16px"
+        >
+          <p><strong>Thank you for your recent order!</strong></p>
+          <p>
+            Leave a review for a chance to receive up to 20% <strong>discount</strong> on your next
+            purchase with Hudson's Bay
+          </p>
+        </table>
+        <div class="order-card__text&gt;" style="padding-left: 16px">
+          <p>Your order</p>
+        </div>
+        <div
+          class="purchase-email__order-card"
+          style="
+            margin: 0 16px;
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            border: 2px solid lightgrey;
+          "
+        >
+          <div class="order-card__content" style="display: flex; flex-direction: row; width: 100%">
+            <img
+              src="https://res.cloudinary.com/hopkins87/image/upload/v1662931031/item_xjflz6.png"
+              style="height: 200px; width: 150px; padding: 0 16px; border: 2px solid lightgrey"
+              id="item-picture"
+              alt="item-picture"
+            />
+            <div
+              class="order-card__desc-wrapper"
+              style="
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+              "
+            >
+              <table
+                class="order-card__description"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding-left: 16px;
+                  width: 100%;
+                "
+              >
+                <h3 class="description__heading">Home studio</h3>
+                <p class="light" style="color: grey">Koble Juno Desk</p>
+                <p>$552.46</p>
+                <p style="margin-top: 80px">Qty 1</p>
+              </table>
+            </div>
+            <table
+              class="order-card__order-qty"
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 95%;
+                padding-left: 16px;
+              "
+            >
+              <p style="margin-top: 185px; margin-left: 360px">Order Number:948887456</p>
+            </table>
+          </div>
+        </div>
+        <div class="button" style="margin-left: 40%">
+          <button
+            type="submit"
+            id="redirect-button"
+            style="
+              height: 70px;
+              width: 250px;
+              margin: 16px 0;
+              background-color: darkblue;
+              border-radius: 10px;
+            "
+          >
+            <a
+              href="http://localhost:8080/home"
+              style="text-decoration: none; font-size: 27px; color: #ffffff"
+              alt="Broken Link"
+              >Go to Review
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+  </table>
+</html>
