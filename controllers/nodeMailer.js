@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const ejs = require('ejs');
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -9,7 +10,6 @@ const transporter = nodemailer.createTransport({
 });
 
 exports.getEmailBody = (req, res) => {
-  console.log(req.body);
   const { points, text, email } = req.body;
 
   const emailBody = {
@@ -21,6 +21,24 @@ exports.getEmailBody = (req, res) => {
   };
   sendEmail(emailBody);
   res.send('hello');
+};
+
+exports.getPurchaseInfo = async (req, res) => {
+  const { email } = req.body;
+  await ejs.renderFile('ejs/purchaseEmail.ejs', (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      const emailBody = {
+        from: process.env.email,
+        to: email,
+        subject: 'Purchase confirmation',
+        html: data,
+      };
+      sendEmail(emailBody);
+      res.send('hello');
+    }
+  });
 };
 
 const sendEmail = (email) => {
