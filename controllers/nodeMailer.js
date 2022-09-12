@@ -12,13 +12,14 @@ const transporter = nodemailer.createTransport({
 
 exports.getEmailBody = (req, res) => {
   const { points, text, email } = req.body;
+  if (req.body.points) {
+    emailBody.points = req.body.points;
+  }
 
   const emailBody = {
     from: process.env.email,
     to: email,
-    subject: 'Bay discount coupon',
-    html: `<p>${text}</p>
-  <p>${points}</p>`,
+    points: '',
   };
   sendEmail(emailBody);
   res.send('hello');
