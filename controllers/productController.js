@@ -1,6 +1,7 @@
-const { v4: uuidv4 } = require('uuid');
-const fs = require('fs');
-const products = require('../data/products.json');
+const { v4: uuidv4 } = require("uuid");
+const fs = require("fs");
+const multer = require("multer");
+const products = require("../data/products.json");
 
 // GET endpoint all products
 exports.getProducts = (req, res) => {
@@ -25,4 +26,14 @@ exports.getProducts = (req, res) => {
   } catch (error) {
     console.log(error);
   }
+};
+
+// post review picture functionality
+
+exports.postReview = (req, res) => {
+  if (!req.file) {
+    res.send("File upload failed!").status(500);
+  }
+
+  res.send(req.file);
 };
