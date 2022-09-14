@@ -1,5 +1,4 @@
 const router = require("express").Router();
-
 const productController = require("../controllers/productController");
 const multer = require("multer");
 
@@ -10,7 +9,6 @@ const multerErrorHandler = (err, res) => {
 
 const storage = multer.diskStorage({
   filename: function (req, file, cb) {
-
     cb(null, file.originalname);
   },
   destination: function (req, file, cb) {

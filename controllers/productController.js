@@ -1,7 +1,7 @@
 const { v4: uuidv4 } = require("uuid");
-const fs = require("fs");
-const multer = require("multer");
+
 const products = require("../data/products.json");
+
 
 // GET endpoint all products
 exports.getProducts = (req, res) => {
@@ -38,3 +38,5 @@ exports.postReview = (req, res) => {
 
   res.send(req.file);
 };
+
+
