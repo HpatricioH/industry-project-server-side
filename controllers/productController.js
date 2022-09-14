@@ -10,6 +10,7 @@ exports.getProducts = (req, res) => {
         products.map((product) => ({
           id: product.id,
           category: product.category,
+          name: product.name,
           price: product.price,
           discount: product.discount,
           colour: product.colour,
