@@ -12,28 +12,28 @@
     "styleCode": 600092321367,
     "images": [
       {
-       "id": "23e908d3-9793-46c9-8afa-8d0bfd546bf8",
-       "image": "http://localhost:8080/images/main-product1.jpg"
+        "id": "23e908d3-9793-46c9-8afa-8d0bfd546bf8",
+        "image": "http://localhost:8080/images/main-product1.jpg"
       },
       {
-       "id": "b9c60cc9-85f4-4cc3-bb91-528a9180afc08",
-       "image": "http://localhost:8080/images/main-product2.jpg"
+        "id": "b9c60cc9-85f4-4cc3-bb91-528a9180afc08",
+        "image": "http://localhost:8080/images/main-product2.jpg"
       },
       {
-       "id": "e3263c5c-11b3-4ed6-855d-bc351b34299d",
-       "image": "http://localhost:8080/images/main-product3.jpg"
+        "id": "e3263c5c-11b3-4ed6-855d-bc351b34299d",
+        "image": "http://localhost:8080/images/main-product3.jpg"
       },
       {
-       "id": "53f25a2c-ce1d-48d7-bcc7-e9b95a56afe8",
-       "image": "http://localhost:8080/images/main-product4.jpg"
+        "id": "53f25a2c-ce1d-48d7-bcc7-e9b95a56afe8",
+        "image": "http://localhost:8080/images/main-product4.jpg"
       },
       {
-       "id": "2cc0cb97-c92e-4724-a778-9e07446ea438",
-       "image": "http://localhost:8080/images/main-product5.jpg"
+        "id": "2cc0cb97-c92e-4724-a778-9e07446ea438",
+        "image": "http://localhost:8080/images/main-product5.jpg"
       },
       {
-       "id": "83e4d3d8-b75f-457a-9c05-1d80f71c8b19",
-       "image": "http://localhost:8080/images/main-product6.jpg"
+        "id": "83e4d3d8-b75f-457a-9c05-1d80f71c8b19",
+        "image": "http://localhost:8080/images/main-product6.jpg"
       }
     ],
     "comments": [
@@ -47,9 +47,17 @@
         "age": "25 to 34",
         "email": "sallygournagour@gmail.com",
         "images": []
+      },
+      {
+        "id": 12,
+        "reviewTile": "table",
+        "reviewText": "plain-text",
+        "prodRecommend": "true",
+        "province": "Ontario",
+        "age": 1,
+        "email": "hhernanp@gmail.com",
+        "points": 31
       }
-     
     ]
   }
 ]
-
