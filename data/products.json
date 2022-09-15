@@ -46,7 +46,7 @@
         "province": "Ontario",
         "age": "25 to 34",
         "email": "sallygournagour@gmail.com",
-        "images": []
+        "image": "http://localhost:8080/images/main-product2.jpg" 
       }
      
     ]
