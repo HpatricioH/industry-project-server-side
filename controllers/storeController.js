@@ -7,7 +7,6 @@ exports.getStores = async (req, res) => {
 };
 
 exports.postReview = async (req, res) => {
-  // console.log(pointsEvaluator.evaluateDiscount(req.body.points));
  await nodeMailer.getDiscountEmail(req.body.email, pointsEvaluator.evaluateDiscount(req.body.points))
 
   setTimeout(() => {

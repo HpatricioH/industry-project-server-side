@@ -16,3 +16,9 @@ exports.fileSaveInterface =async(userReview) => {
   });
   return
 };
+
+
+
+exports.getReviewData = () => {
+  return reviews;
+}
