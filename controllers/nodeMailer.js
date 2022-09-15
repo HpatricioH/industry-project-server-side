@@ -2,6 +2,7 @@ const nodemailer = require("nodemailer");
 const ejs = require("ejs");
 const voucher_code = require("voucher-code-generator");
 
+
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -10,25 +11,10 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-exports.getEmailBody = (req, res) => {
-  const { points, text, email } = req.body;
-  if (req.body.points) {
-    emailBody.points = req.body.points;
-  }
-
-  const emailBody = {
-    from: process.env.email,
-    to: email,
-    points: "",
-  };
-  sendEmail(emailBody);
-  res.send("hello");
-};
-
-exports.getPurchaseInfo = async (req, res) => {
+exports.getPurchaseInfo = async (req, res, next) => {
   const { email } = req.body;
 
-  await ejs.renderFile("ejs/purchaseEmail.ejs", (err, data) => {
+  ejs.renderFile("ejs/purchaseEmail.ejs", (err, data, next) => {
     if (err) {
       console.log(err);
     } else {
@@ -39,24 +25,28 @@ exports.getPurchaseInfo = async (req, res) => {
         html: data,
       };
       sendEmail(emailBody);
-      res.send("hello");
+      next();
     }
   });
+
+  res.send("hello");
 };
 
-exports.getDiscount = async (req, res) => {
-  const { points, email } = req.body;
+exports.getDiscountEmail = async (email,points) => {
+
+  
+  // console.log(points);
   const discount = voucher_code.generate({
     length: 8,
     count: 1,
   });
-  await ejs.renderFile(
-    "ejs/discountEmail.ejs",
-    { discVoucher: discount, discAmount: "20" },
-    (err, data) => {
-      if (err) {
-        console.log(err);
-      } else {
+  
+
+  console.log(1);
+  ejs.renderFile(
+      "ejs/discountEmail.ejs",
+      { discVoucher: discount, discAmount: points },
+      (err, data) => {
         const emailBody = {
           from: process.env.email,
           to: email,
@@ -64,11 +54,22 @@ exports.getDiscount = async (req, res) => {
           html: data,
         };
         sendEmail(emailBody);
-        res.send("hello");
+         return;
+
       }
-    }
-  );
+   );
+  console.log(2);
+
+
+  return
+  
+
+  
+
+  
 };
+
+
 
 const sendEmail = (email) => {
   transporter.sendMail(email, function (error, info) {
