@@ -25,7 +25,7 @@ exports.getPurchaseInfo = async (req, res, next) => {
         html: data,
       };
       sendEmail(emailBody);
-      next();
+
     }
   });
 
@@ -45,7 +45,7 @@ exports.getDiscountEmail = async (email,points) => {
   console.log(1);
   ejs.renderFile(
       "ejs/discountEmail.ejs",
-      { discVoucher: discount, discAmount: points },
+      { discVoucher: discount, discAmount: "10%" },
       (err, data) => {
         const emailBody = {
           from: process.env.email,

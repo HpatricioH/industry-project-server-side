@@ -1,5 +1,5 @@
 const { v4: uuidv4 } = require("uuid");
-
+const readReviews = require("./fs");
 const products = require("../data/products.json");
 
 
@@ -39,3 +39,6 @@ exports.postReview = (req, res) => {
 };
 
 
+exports.getReviews = (req, res) => {
+  res.json(readReviews.getReviewData()).status(200)
+}

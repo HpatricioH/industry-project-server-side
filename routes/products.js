@@ -21,6 +21,7 @@ const upload = multer({ storage: storage });
 // -----------------------
 
 router.get("/", productController.getProducts);
+router.get("/:id", productController.getReviews)
 router.post("/:id", upload.single("reviewImage"), productController.postReview);
 
 module.exports = router;
