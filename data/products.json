@@ -1,0 +1,53 @@
+[
+  {
+    "id": "84e96018-4022-434e-80bf-000ce4cd12b8",
+    "category": "Home Studio",
+    "name": "Koble Juno Desk",
+    "price": "$649.95",
+    "discount": "$552.46",
+    "colour": "OAK",
+    "size": "One Size",
+    "description": "From the Koble Juno Desk Oak Collection. Koble Smart Desk for the smart home office is a modern design height adjustable desk allows you to work from a sitting or standing position of your choice with qi wireless charging and multiple USB/USB-C ports and digital controls. Available in multiple finishes. Koble smart desk modern height adjustable desk allows you to work from a sitting or standing position of your choice. Available in a variety of sizes, the wireless charging point on the worktop will allow you to charge your qi compatible phone without the need for lots of messy cables. Two x USB charging points and one x c charge allows convenience when either looking to power a desk lamp or charging other devices. The digital setting on the front of the desk allows you to establish which heights are most suitable to provide you lumber support, these can then be saved using the memory settings available. In addition to this there is a lock safe button. Stopping unintentional changes to the height being made, there is also a safeguard sensor to stop any unexpected collisions. Includes smart desk featuring wireless charging, 2 USB ports, soft closing drawer with touch-sensitive rise & fall height adjustment, ash wood melamine top, white metal painted height adjustable legs, black control panel front, soft closing drawer, melamine/metal, wipe clean, imported",
+    "specifications": "23.6'W x 47.2'L 28.7'H",
+    "styleCode": 600092321367,
+    "images": [
+      {
+        "id": "23e908d3-9793-46c9-8afa-8d0bfd546bf8",
+        "image": "http://localhost:8080/images/main-product1.jpg"
+      },
+      {
+        "id": "b9c60cc9-85f4-4cc3-bb91-528a9180afc08",
+        "image": "http://localhost:8080/images/main-product2.jpg"
+      },
+      {
+        "id": "e3263c5c-11b3-4ed6-855d-bc351b34299d",
+        "image": "http://localhost:8080/images/main-product3.jpg"
+      },
+      {
+        "id": "53f25a2c-ce1d-48d7-bcc7-e9b95a56afe8",
+        "image": "http://localhost:8080/images/main-product4.jpg"
+      },
+      {
+        "id": "2cc0cb97-c92e-4724-a778-9e07446ea438",
+        "image": "http://localhost:8080/images/main-product5.jpg"
+      },
+      {
+        "id": "83e4d3d8-b75f-457a-9c05-1d80f71c8b19",
+        "image": "http://localhost:8080/images/main-product6.jpg"
+      }
+    ],
+    "comments": [
+      {
+        "id": "35bba08b-1b51-4153-ba7e-6da76b5ec1b9",
+        "name": "obada A.",
+        "title": "Perfect desk for a small home office",
+        "comment": "This desk is cool! It fits in my small home office really well and you won't believe how easy it was to build. The sit/stand functionality is the best part!",
+        "recommend": "yes",
+        "province": "Ontario",
+        "age": "25 to 34",
+        "email": "sallygournagour@gmail.com",
+        "image": "http://localhost:8080/images/main-product2.jpg"
+      }
+    ]
+  }
+]
